@@ -5,7 +5,6 @@ const manifest = require('./manifest');
 const { catalogs } = require('./catalogs');
 const shows = require('./shows');
 const movies = require('./movies');
-
 const PORT = Number.parseInt(process.env.PORT || '7001', 10);
 const CATALOG_PAGE_SIZE = 100;
 const RPDB_API_KEY = 't0-free-rpdb-blocks';
@@ -203,4 +202,5 @@ console.log(
 serveHTTP(builder.getInterface(), {
   port: PORT,
   cacheMaxAge: 0,
+  static: '/public',
 });
