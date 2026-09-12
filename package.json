@@ -1,0 +1,21 @@
+{
+  "name": "nostalgia-rewind-stremio",
+  "version": "1.0.0",
+  "description": "Nostalgia Rewind Stremio catalog addon",
+  "main": "addon.js",
+  "scripts": {
+    "start": "node addon.js",
+    "validate": "node scripts/validate-shows.js"
+  },
+  "keywords": [
+    "stremio",
+    "stremio-addon",
+    "nostalgia"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "stremio-addon-sdk": "^1.6.10"
+  }
+}
